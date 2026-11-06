@@ -1,7 +1,7 @@
 # HYDROBOTICS
 
 Static site prepared for GitHub Pages. The pages load their shared theme from
-`css/theme.css` and site scripts from `js/`.
+`theme.css` and site scripts from `js/`.
 
 ## Publish with GitHub Pages
 
