@@ -1,2 +1,29 @@
-/* Compatibility path for pages still linking to css/theme.css. */
+/* Shared styles for pages that still use the legacy css/theme.css path. */
 @import url("../theme.css");
+@import url("../site.css");
+
+/* Keep every settings category visible so users can scan all available options. */
+.settings-sections {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.settings-section,
+.settings-section.active {
+    display: block;
+    scroll-margin-top: 1.5rem;
+}
+
+.settings-section > h2 {
+    color: var(--accent-dark);
+}
+
+.settings-section + .settings-section {
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 640px) {
+    .settings-menu {
+        position: static;
+    }
+}
